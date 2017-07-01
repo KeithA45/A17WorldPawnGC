@@ -300,12 +300,13 @@ namespace A17FilePawnGC
 			{
 				return true;
 			}
-			//if (PawnUtility.IsNonPlayerFactionBasePrisoner(pawn))
-			//{
-			//	return true;
-			//}
+            // TODO (KA): No idea what this should resolve to in A17...
+            //if (PawnUtility.IsNonPlayerFactionBasePrisoner(pawn))
+            //{
+            //	return true;
+            //}
 
-			return false;
+            return false;
 		}
 
 		//"Unimportant" keep pawns means we don't care about keeping relatives the player has never seen
@@ -450,6 +451,7 @@ namespace A17FilePawnGC
 			{
 				return "TransportPod";
 			}
+            // TODO (KA): No idea what this should resolve to in A17...
 			//if (PawnUtility.IsNonPlayerFactionBasePrisoner(pawn))
 			//{
 			//	return "NonPlayerPrisoner";
@@ -535,12 +537,13 @@ namespace A17FilePawnGC
         {
             get
             {
+                // TODO (KA): This override is now required, but I have no idea what to do here...s
                 return null;
             }
         }
 
         [DetourMember]
-		public override void TraderTrackerTick()
+		public new void TraderTrackerTick()
 		{
 			if (Find.TickManager.TicksGame - lastStockGenerationTicks > 600000) { TryDestroyStock(); }
 
