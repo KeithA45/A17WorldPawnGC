@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<ModMetaData>
 		<name>A17 File Pawn GC</name>
-		<author>Keith Ayers (KeithA45)</author>
+		<author>Aegis (KeithA45)</author>
 		<url></url>
 		<targetVersion>0.17.0</targetVersion>
-		<description>Cleans up unimportant, unwanted worldpawns, improving performance in long running saves.
-		
-		Modified from Zhentar's mod "WorldPawnGC" to be A17 compatible.</description>
+		<description>
+Cleans up unimportant, unwanted worldpawns, improving performance in long running saves. Sometimes reduces save file size as well.
+
+Modified and released (with permission) from Zhentar's mod "WorldPawnGC" to be A17 compatible.
+
+Can be added/removed from existing saves without issues.</description>
 </ModMetaData>
